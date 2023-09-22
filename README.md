@@ -1,5 +1,9 @@
 # password-generator-py
 
+By default generates password using all allowed letters.
+Program flags are used to exclude characters. 
+If all flags are given, the password will be generated from A-Z letters.
+
 ## usage
 
 ```bash
@@ -26,4 +30,19 @@ optional arguments:
 
 ```bash
 install -m 755 password_generator.py ~/.local/bin/pwg
+```
+
+## examples
+```bash
+$ pwg
+cSUHCÉ-3ÑY5eLkXð2JHhXUu]
+
+$ pwg 32
+9bBuNO8Laçtoä-9va=8pk#wo<d1L}z,R
+
+$ pwg 32 -sl
+AT5HJø6L6á'ÓKQ'ÚS&XUKXQQNÇB\9SüN
+
+$ pwg 32 -snuld
+OGNDZYGBBEHFZIEQTIBQLJJORGUKTIIV
 ```
